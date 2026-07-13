@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #000000;
+  --color-secondary: #ffffff;
+  --color-gold: #C5A028;
+  --color-cream: #F5F0E8;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: var(--font-raleway), "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar for cinematic feel */
+body::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Canvas performance */
+canvas {
+  touch-action: none;
+  outline: none;
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(197, 160, 40, 0.15);
+  color: #000000;
+}
