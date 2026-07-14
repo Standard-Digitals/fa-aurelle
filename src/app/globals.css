@@ -45,3 +45,14 @@ canvas {
   background-color: rgba(197, 160, 40, 0.15);
   color: #000000;
 }
+
+/* Testimonial parallax scroll animations */
+@keyframes scrollUp {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+@keyframes scrollDown {
+  0% { transform: translateY(-50%); }
+  100% { transform: translateY(0); }
+}
